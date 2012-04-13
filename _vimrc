@@ -20,7 +20,6 @@ set sw=4
 set background=dark
 colorscheme solarized
 "colorscheme blackboard desert
-autocmd FileType python set et
 map <c-w><c-t> :WMToggle<cr>
 let g:fencview_autodetect = 1   "打开文件时自动识别编码
 let g:fencview_checklines = 10 "检查前后10行来判断编码
@@ -43,7 +42,13 @@ nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>  
 
 nnoremap Tl :Tlist<CR>  
-map <c-w>tn :tabnew<CR>:WMToggle<cr><c-w><c-w>
+
+autocmd FileType python set et
+autocmd FileType html set et sw=2 ts=2
+autocmd FileType htmldjango set et sw=2 ts=2
+autocmd FileType htmljinja set et sw=2 ts=2
+autocmd FileType html set et sw=2
+autocmd FileType javascript set et sw=2
 
 set diffexpr=MyDiff()
 function MyDiff()
