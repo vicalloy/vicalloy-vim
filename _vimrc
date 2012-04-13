@@ -17,7 +17,9 @@ set nowrap
 set guioptions+=b
 set ts=4
 set sw=4
-colorscheme blackboard "desert
+set background=dark
+colorscheme solarized
+"colorscheme blackboard desert
 autocmd FileType python set et
 map <c-w><c-t> :WMToggle<cr>
 let g:fencview_autodetect = 1   "打开文件时自动识别编码
