@@ -17,7 +17,6 @@ set nowrap
 set guioptions+=b
 set ts=4
 set sw=4
-set gfn=DejaVu_Sans_Mono:h10
 colorscheme blackboard "desert
 autocmd FileType python set et
 map <c-w><c-t> :WMToggle<cr>
@@ -29,6 +28,11 @@ nnoremap bs :BufExplorerHorizontalSplit<CR>
 nnoremap bv :BufExplorerVerticalSplit<CR>
 set fileencodings=ucs-bom,utf-8,gbk,big5,latin1
 set langmenu=zh_CN.utf-8
+if has('win32')
+  set gfn=DejaVu_Sans_Mono:h10
+else
+  set gfn=Deja\ Vu\ Sans\ Mono\ 10
+endif
 
 " tab navigation  
 nnoremap tl :tabnext<CR>  
