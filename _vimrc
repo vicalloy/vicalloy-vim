@@ -35,6 +35,7 @@ if has('win32')
 else
   set gfn=Deja\ Vu\ Sans\ Mono\ 10
 endif
+let NERDTreeIgnore = ['\.pyc$']
 
 " tab navigation  
 nnoremap tl :tabnext<CR>  
