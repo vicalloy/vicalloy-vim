@@ -24,7 +24,7 @@ colorscheme solarized
 map <c-w><c-t> :WMToggle<cr>
 let g:fencview_autodetect = 1   "打开文件时自动识别编码
 let g:fencview_checklines = 10 "检查前后10行来判断编码
-nnoremap tt :NERDTree<CR>
+nnoremap tt :NERDTreeToggle<CR>
 nnoremap be :BufExplorer<CR>
 nnoremap bs :BufExplorerHorizontalSplit<CR>
 nnoremap bv :BufExplorerVerticalSplit<CR>
