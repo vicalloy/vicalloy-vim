@@ -18,6 +18,7 @@ set guioptions+=b
 set ts=4
 set sw=4
 set background=dark
+set fileformats=unix ",dos
 colorscheme solarized
 "colorscheme blackboard desert
 map <c-w><c-t> :WMToggle<cr>
